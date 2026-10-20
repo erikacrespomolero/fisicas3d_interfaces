@@ -56,6 +56,4 @@ Se monta una escena con un personaje jugador controlable que recoge escudos y ac
 ![ejercicio8](./gifs/ejercicio8.gif)
 
 ### Ejercicio 9 — Ejercicio 3 con el cubo como objeto físico
-Se reimplementa el ejercicio 3 (humanoides y escudos) haciendo que el cubo sea un **objeto físico dinámico** controlado por el jugador con las flechas o WASD, en lugar de un objeto estático que espera a ser golpeado. El script `CubeController` obtiene el `Rigidbody` en `Awake`, congela la rotación con `FreezeRotation` para que el cubo no vuelque al moverse y, en `FixedUpdate`, lee los ejes `Horizontal` y `Vertical` con `Input.GetAxisRaw` para asignar `rb.linearVelocity` manteniendo la componente `Y` (para que la gravedad siga actuando). Al ser ahora un cuerpo dinámico, se puede conducir el cubo contra los humanoides de tipo 1 o tipo 2 para disparar el evento `OnColisionHumanoide` del ejercicio 3 a voluntad, y el cubo responde a la física, choca con los escudos y puede ser empujado por el resto del entorno.
-
-![ejercicio9](./gifs/ejercicio9.gif)
+El ejercicio 3 ya se realizó siendo el cubo un objeto rígido, por lo que es igual que el ejercicio 3.
